@@ -1,0 +1,7 @@
+server/representation/Address.class
+server/util/ConversionHelper.class
+server/builder/AddressBuilder.class
+server/controller/ErrorController.class
+server/util/Util.class
+server/controller/AddressController.class
+server/ServerApplication.class

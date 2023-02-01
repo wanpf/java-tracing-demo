@@ -1,0 +1,10 @@
+client/util/JsonHelper.class
+client/database/AddressRepository.class
+client/service/AddressService.class
+client/database/Address.class
+client/controller/ErrorController.class
+client/controller/AddressController.class
+client/util/ErrorHelper.class
+client/bean/Error.class
+client/service/AddressServiceImpl.class
+client/ClientApplication.class

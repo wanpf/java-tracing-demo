@@ -1,0 +1,3 @@
+## Project: `deepak-server`
+* A java rest server built with spring boot framework.
+* Please refer to parent folder read me file for more details on this project. 

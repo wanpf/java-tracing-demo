@@ -1,0 +1,6 @@
+## Project - deepak-client
+* A java client built with spring boot framework.
+* Please refer to parent folder read me file for more details.
+
+## Before running the client:
+* Please start the sever. `deepak-server`

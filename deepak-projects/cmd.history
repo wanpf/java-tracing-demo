@@ -1,0 +1,1145 @@
+ 1211  docker exec kong  /bin/bash
+ 1212  docker ps
+ 1213  docker exec -it kong bash
+ 1214  docker images
+ 1215  docker ps
+ 1216  docker stop konga
+ 1217  docker remove konga
+ 1218  docker --help
+ 1219  docker rm konga
+ 1220  docker ps
+ 1221  docker stop kong
+ 1222  docker rm kong
+ 1223  docker stop kong-database
+ 1224  docker rm kong-database
+ 1225  docker list
+ 1226  docker ps
+ 1227  docker container
+ 1228  docker container list
+ 1229  docker ps
+ 1230  kp
+ 1231  docker image prune
+ 1232  docker image prune -a
+ 1233  docker iamges
+ 1234  docker images
+ 1235  sync
+ 1237  make kind-reset
+ 1238  sync
+ 1239  up
+ 1240  sync
+ 1241  init 6
+ 1242  kp
+ 1243  sync
+ 1244  docker ps
+ 1245  telnet 0 1337
+ 1246  telnet 0 8000
+ 1247  cd /var/root/cncf/test/
+ 1248  ll
+ 1249  cd deepakLab/
+ 1250  ll
+ 1251  cd deepak-projects/
+ 1252  ll
+ 1253  cd deepak-client/
+ 1254  ll
+ 1255  java -jar target/deepak-client-0.1.0.jar --server.port=9091
+ 1256  java -javaagent:./opentelemetry-javaagent-1.22.1.jar -Dotel.traces.exporter=none -jar deepak-client-0.1.0.jar --server.port=9092  
+ 1257  cd target/
+ 1258  java -javaagent:./opentelemetry-javaagent-1.22.1.jar -Dotel.traces.exporter=none -jar deepak-client-0.1.0.jar --server.port=9092  
+ 1259  java -javaagent:./opentelemetry-javaagent-1.22.1.jar -Dotel.traces.exporter=none -jar deepak-client-0.1.0.jar --server.port=9091
+ 1261  cat .env | grep -v "#"
+ 1262  cd
+ 1263  wkp
+ 1264  cd /var/root/cncf/test/deepakLab/
+ 1265  ll
+ 1266  cd deepak-projects/
+ 1267  cd deepak-client/
+ 1268  java -jar target/deepak-client-0.1.0.jar --server.port=9090
+ 1269  cd target/
+ 1270  java -javaagent:./opentelemetry-javaagent-1.22.1.jar -Dotel.traces.exporter=none -jar deepak-client-0.1.0.jar --server.port=9092  
+ 1271  java -javaagent:./opentelemetry-javaagent-1.22.1.jar -Dotel.traces.exporter=none -jar deepak-client-0.1.0.jar --server.port=9090  
+ 1272  cd /tmp
+ 1273  wget -d http://localhost:9090/fetchAndStore/9091
+ 1274  cat 9091 
+ 1275  wget -d http://localhost:9090/fetchAndStore/9091
+ 1276  cat 9091.2
+ 1277  wget -d http://localhost:9090/fetchAndStore/9090
+ 1278  cat 9090
+ 1279  vi /etc/hosts
+ 1280  wget -d http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1281  cat 9090.1
+ 1282  wget -d http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1283  cat 9090.2
+ 1284  wget -d http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1285  cat 9090.3
+ 1286  wget -d http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1287  cat 9090.7
+ 1288  ll
+ 1289  cat 9090.6
+ 1290  cat 9090.5
+ 1291  cat 9090.1
+ 1292  cat 9090.2
+ 1293  cat 9090.3
+ 1294  cat 9090.4
+ 1295  cat 9090.5
+ 1296  cat 9090.6
+ 1297  cat 9090.7
+ 1298  wget -d http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1299  cat 9090.10
+ 1300  wget -d http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1301  cat 9090.11
+ 1302  wget -d http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1303  cat 9090.12
+ 1304  wget -d http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1305  vi /etc/hosts
+ 1306  wget -d http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1307  cat 9090.14
+ 1308  wget -d http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1309  curl -H "X-B3-TraceId: 6710dcc7ae75f953" http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1310  curl_client="$(kubectl get pod -n java-tracing -l app=curl -o jsonpath='{.items[0].metadata.name}')"
+ 1311  kubectl exec ${curl_client} -n java-tracing -c curl -- curl -ksi http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1312  kp
+ 1314  git status
+ 1315  git reset --hard
+ 1316  git pull
+ 1317  git log
+ 1318  sync
+ 1319  make docker-build; make build-osm;
+ 1320  make kind-demo
+ 1321  ll
+ 1322  cd demo
+ 1323  ll
+ 1324  vi run-osm-demo.sh 
+ 1325  ll
+ 1326  cd ..
+ 1327  ll
+ 1328  find . -name "*bookbuyer*"
+ 1329  find . -name "*bookstore*"
+ 1330  cd ./demo/cmd/bookstore
+ 1331  ll
+ 1332  vi bookstore.go
+ 1333  cd ..
+ 1334  ll
+ 1335  cd common/
+ 1336  ll
+ 1337  vi books.go 
+ 1338  docker images
+ 1339  docker ps
+ 1340  cd
+ 1341  history | grep sel
+ 1342  kubectl exec -it -n bookwarehouse `kubectl get POD -A | grep mysql | awk '{print $2}'` -- /usr/bin/mysql -uroot -p'mypassword' booksdemo -e "select * from records"
+ 1343  history | grep 16686
+ 1345  `kp | grep jaeger | awk '{print "kubectl port-forward "$2" -n osm-system 16686:16686 --address=\"0.0.0.0\""}'`
+ 1347  kp
+ 1348  make kind-reset
+ 1349  kp
+ 1350  make kind-up
+ 1351  cd /var/root/cncf/test
+ 1352  ll
+ 1353  git clone git clone https://github.com/DeepuSahni/deepakLab.git
+ 1354  git clone https://github.com/DeepuSahni/deepakLab.git
+ 1355  cd deepakLab/
+ 1356  ll
+ 1357  cd deepak-projects/
+ 1358  ll
+ 1359  cd deepak-server/
+ 1360  ll
+ 1361  mvn clean install
+ 1362  apt install maven
+ 1363  mvn
+ 1364  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 1365  ll
+ 1366  ll target/
+ 1367  cd ..
+ 1368  cd deepak-client/
+ 1369  ll
+ 1370  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 1371  ll
+ 1372  ll target/
+ 1373  java -jar target/deepak-client-0.1.0.jar --server.port=9090
+ 1374  ll
+ 1375  cd src
+ 1376  ll
+ 1377  cd main/
+ 1378  ll
+ 1379  cd java/
+ 1380  ll
+ 1381  cd ..
+ 1382  tree
+ 1383  vi resources/application.properties 
+ 1384  vi ClientApplication.java
+ 1385  vi java/client/ClientApplication.java
+ 1386  vi java/client/controller/AddressController.java
+ 1387  cd ../../..
+ 1388  cd deepak-client/
+ 1389  git status
+ 1390  ll
+ 1391  history
+ 1392  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 1393  vi /var/root/cncf/test/deepakLab/deepak-projects/deepak-client/src/main/java/client/controller/AddressController.java
+ 1394  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 1395  history
+ 1396  java -jar target/deepak-client-0.1.0.jar --server.port=9092
+ 1397  ll
+ 1398  vi /var/root/cncf/test/deepakLab/deepak-projects/deepak-client/src/main/java/client/controller/AddressController.java
+ 1399  [A
+ 1400  vi /var/root/cncf/test/deepakLab/deepak-projects/deepak-client/src/main/java/client/controller/AddressController.java
+ 1401  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 1402  java -jar target/deepak-client-0.1.0.jar --server.port=9092
+ 1403  history
+ 1404  java -jar target/deepak-client-0.1.0.jar --server.port=9092
+ 1405  cd target/
+ 1406  ll
+ 1407  cp ../../deepak-server/target/opentelemetry-javaagent-1.22.1.jar  .
+ 1408  ll
+ 1409  java -javaagent:./opentelemetry-javaagent-1.22.1.jar -jar deepak-client-0.1.0.jar --server.port=9092
+ 1410  java -javaagent:./opentelemetry-javaagent-1.22.1.jar -Dotel.traces.exporter=zipkin -jar deepak-client-0.1.0.jar --server.port=9092
+ 1411  java -javaagent:./opentelemetry-javaagent-1.22.1.jar -Dotel.traces.exporter=none -jar deepak-client-0.1.0.jar --server.port=9092
+ 1412  java -javaagent:./opentelemetry-javaagent-1.22.1.jar -Dotel.traces.exporter=none -Dotel.metrics.exporter=none -Dotel.logs.exporter=none -jar deepak-client-0.1.0.jar --server.port=9092
+ 1413  ll
+ 1414  vi run.sh
+ 1415  ll
+ 1416  chmod 755 *.sh
+ 1417  ll
+ 1418  ./run.sh
+ 1419  vi run.sh 
+ 1420  ./run.sh
+ 1421  export SERVER_PORT=9092
+ 1422  ./run.sh
+ 1423  ll
+ 1424  mkdir docker
+ 1425  cd docker/
+ 1426  cp ../*.jar .
+ 1427  cp ../*.sh .
+ 1428  ll
+ 1429  chmod 644 *.jar
+ 1430  ll
+ 1431  ./run.sh
+ 1432  ll
+ 1433  javac -version
+ 1434  java -version
+ 1435  ll
+ 1436  vi Dockerfile
+ 1437  ll
+ 1438  vi run.sh
+ 1439  ll
+ 1440  cat Dockerfile 
+ 1441  ll
+ 1442  docker build --tag java-tracing-client .
+ 1443  docker images
+ 1444  docker run -rm -e SERVER_PORT='9092' --name www-9092 java-tracing-client 
+ 1445  docker run --rm -e SERVER_PORT='9092' --name www-9092 java-tracing-client 
+ 1446  docker run --rm -e SERVER_PORT='9092' -p 9092:9092 --name www-9092 java-tracing-client 
+ 1447  docker images
+ 1448  docker tag java-tracing-client localhost:5000/flomesh/java-tracing-client
+ 1449  docker push localhost:5000/flomesh/java-tracing-client
+ 1450  docker images
+ 1451  kubectl run --dry-run -e SERVER_PORT='9092' --name www-9092 localhost:5000/flomesh/java-tracing-client -o yaml
+ 1452  kubectl run --dry-run --env=SERVER_PORT='9092' --name www-9092 localhost:5000/flomesh/java-tracing-client -o yaml
+ 1453  kubectl run --dry-run --env=SERVER_PORT='9092' www-9092 localhost:5000/flomesh/java-tracing-client -o yaml
+ 1454  kubectl run --dry-run --env=SERVER_PORT='9092' www-9092 --image localhost:5000/flomesh/java-tracing-client -o yaml
+ 1455  ll
+ 1456  kp
+ 1457  kubectl apply -f - <<EOF
+ 1458  apiVersion: v1
+ 1459  kind: Pod
+ 1460  metadata:
+ 1461    labels:
+ 1462      app: www-9092
+ 1463    name: www-9092
+ 1464  spec:
+ 1465    containers:
+ 1466    - env:
+ 1467      - name: SERVER_PORT
+ 1468        value: "9092"
+ 1469      image: localhost:5000/flomesh/java-tracing-client
+ 1470      name: www-9092
+ 1471    dnsPolicy: ClusterFirst
+ 1472    restartPolicy: Always
+ 1473  EOF
+ 1474  kp
+ 1475  kep
+ 1476  kp
+ 1477  ks
+ 1478  kubectl get service/kubernetes -o yaml
+ 1479  kubectl apply -f - <<EOF
+ 1480  apiVersion: v1
+ 1481  kind: Service
+ 1482  metadata:
+ 1483    labels:
+ 1484      service: www-9092
+ 1485    name: www-9092
+ 1486  spec:
+ 1487    ipFamilies:
+ 1488    - IPv4
+ 1489    ports:
+ 1490    - name: web
+ 1491      port: 9092
+ 1492      protocol: http
+ 1493      targetPort: 9092
+ 1494    type: ClusterIP
+ 1495    selector:
+ 1496      labels:
+ 1497        app: www-9092
+ 1498  EOF
+ 1499  kubectl apply -f - <<EOF
+ 1500  apiVersion: v1
+ 1501  kind: Service
+ 1502  metadata:
+ 1503    labels:
+ 1504      service: www-9092
+ 1505    name: www-9092
+ 1506  spec:
+ 1507    ipFamilies:
+ 1508    - IPv4
+ 1509    ports:
+ 1510    - name: web
+ 1511      port: 9092
+ 1512      protocol: http
+ 1513      targetPort: 9092
+ 1514    type: ClusterIP
+ 1515    selector:
+ 1516      app: www-9092
+ 1517  EOF
+ 1518  kubectl apply -f - <<EOF
+ 1519  apiVersion: v1
+ 1520  kind: Service
+ 1521  metadata:
+ 1522    labels:
+ 1523      service: www-9092
+ 1524    name: www-9092
+ 1525  spec:
+ 1526    ipFamilies:
+ 1527    - IPv4
+ 1528    ports:
+ 1529    - name: web
+ 1530      port: 9092
+ 1531      protocol: TCP
+ 1532      appProtocol: http
+ 1533      targetPort: 9092
+ 1534    type: ClusterIP
+ 1535    selector:
+ 1536      app: www-9092
+ 1537  EOF
+ 1538  kp
+ 1539  ks
+ 1540  kpe
+ 1541  kep
+ 1542  ll
+ 1543  # 9090
+ 1544  kubectl apply -f - <<EOF
+ 1545  apiVersion: v1
+ 1546  kind: Pod
+ 1547  metadata:
+ 1548    labels:
+ 1549      app: www-9090
+ 1550    name: www-9090
+ 1551  spec:
+ 1552    containers:
+ 1553    - env:
+ 1554      - name: SERVER_PORT
+ 1555        value: "9090"
+ 1556      image: localhost:5000/flomesh/java-tracing-client
+ 1557      name: www-9090
+ 1558    dnsPolicy: ClusterFirst
+ 1559    restartPolicy: Always
+ 1560  EOF
+ 1561  kubectl apply -f - <<EOF
+ 1562  apiVersion: v1
+ 1563  kind: Service
+ 1564  metadata:
+ 1565    labels:
+ 1566      service: www-9090
+ 1567    name: www-9090
+ 1568  spec:
+ 1569    ipFamilies:
+ 1570    - IPv4
+ 1571    ports:
+ 1572    - name: web
+ 1573      port: 9090
+ 1574      protocol: TCP
+ 1575      appProtocol: http
+ 1576      targetPort: 9090
+ 1577    type: ClusterIP
+ 1578    selector:
+ 1579      app: www-9090
+ 1580  EOF
+ 1581  # 9091
+ 1582  kubectl apply -f - <<EOF
+ 1583  apiVersion: v1
+ 1584  kind: Pod
+ 1585  metadata:
+ 1586    labels:
+ 1587      app: www-9091
+ 1588    name: www-9091
+ 1589  spec:
+ 1590    containers:
+ 1591    - env:
+ 1592      - name: SERVER_PORT
+ 1593        value: "9091"
+ 1594      image: localhost:5000/flomesh/java-tracing-client
+ 1595      name: www-9091
+ 1596    dnsPolicy: ClusterFirst
+ 1597    restartPolicy: Always
+ 1598  EOF
+ 1599  kubectl apply -f - <<EOF
+ 1600  apiVersion: v1
+ 1601  kind: Service
+ 1602  metadata:
+ 1603    labels:
+ 1604      service: www-9091
+ 1605    name: www-9091
+ 1606  spec:
+ 1607    ipFamilies:
+ 1608    - IPv4
+ 1609    ports:
+ 1610    - name: web
+ 1611      port: 9091
+ 1612      protocol: TCP
+ 1613      appProtocol: http
+ 1614      targetPort: 9091
+ 1615    type: ClusterIP
+ 1616    selector:
+ 1617      app: www-9091
+ 1618  EOF
+ 1619  # 9092
+ 1620  kubectl apply -f - <<EOF
+ 1621  apiVersion: v1
+ 1622  kind: Pod
+ 1623  metadata:
+ 1624    labels:
+ 1625      app: www-9092
+ 1626    name: www-9092
+ 1627  spec:
+ 1628    containers:
+ 1629    - env:
+ 1630      - name: SERVER_PORT
+ 1631        value: "9092"
+ 1632      image: localhost:5000/flomesh/java-tracing-client
+ 1633      name: www-9092
+ 1634    dnsPolicy: ClusterFirst
+ 1635    restartPolicy: Always
+ 1636  EOF
+ 1637  kubectl apply -f - <<EOF
+ 1638  apiVersion: v1
+ 1639  kind: Service
+ 1640  metadata:
+ 1641    labels:
+ 1642      service: www-9092
+ 1643    name: www-9092
+ 1644  spec:
+ 1645    ipFamilies:
+ 1646    - IPv4
+ 1647    ports:
+ 1648    - name: web
+ 1649      port: 9092
+ 1650      protocol: TCP
+ 1651      appProtocol: http
+ 1652      targetPort: 9092
+ 1653    type: ClusterIP
+ 1654    selector:
+ 1655      app: www-9092
+ 1656  EOF
+ 1657  kp
+ 1658  kep
+ 1659  ks
+ 1660  kubectl create ns java-tracing
+ 1661  # 9090
+ 1662  kubectl -n java-tracing apply -f - <<EOF
+ 1663  apiVersion: v1
+ 1664  kind: Pod
+ 1665  metadata:
+ 1666    labels:
+ 1667      app: www-9090
+ 1668    name: www-9090
+ 1669  spec:
+ 1670    containers:
+ 1671    - env:
+ 1672      - name: SERVER_PORT
+ 1673        value: "9090"
+ 1674      image: localhost:5000/flomesh/java-tracing-client
+ 1675      name: www-9090
+ 1676    dnsPolicy: ClusterFirst
+ 1677    restartPolicy: Always
+ 1678  EOF
+ 1679  kubectl -n java-tracing apply -f - <<EOF
+ 1680  apiVersion: v1
+ 1681  kind: Service
+ 1682  metadata:
+ 1683    labels:
+ 1684      service: www-9090
+ 1685    name: www-9090
+ 1686  spec:
+ 1687    ipFamilies:
+ 1688    - IPv4
+ 1689    ports:
+ 1690    - name: web
+ 1691      port: 9090
+ 1692      protocol: TCP
+ 1693      appProtocol: http
+ 1694      targetPort: 9090
+ 1695    type: ClusterIP
+ 1696    selector:
+ 1697      app: www-9090
+ 1698  EOF
+ 1699  # 9091
+ 1700  kubectl -n java-tracing apply -f - <<EOF
+ 1701  apiVersion: v1
+ 1702  kind: Pod
+ 1703  metadata:
+ 1704    labels:
+ 1705      app: www-9091
+ 1706    name: www-9091
+ 1707  spec:
+ 1708    containers:
+ 1709    - env:
+ 1710      - name: SERVER_PORT
+ 1711        value: "9091"
+ 1712      image: localhost:5000/flomesh/java-tracing-client
+ 1713      name: www-9091
+ 1714    dnsPolicy: ClusterFirst
+ 1715    restartPolicy: Always
+ 1716  EOF
+ 1717  kubectl -n java-tracing apply -f - <<EOF
+ 1718  apiVersion: v1
+ 1719  kind: Service
+ 1720  metadata:
+ 1721    labels:
+ 1722      service: www-9091
+ 1723    name: www-9091
+ 1724  spec:
+ 1725    ipFamilies:
+ 1726    - IPv4
+ 1727    ports:
+ 1728    - name: web
+ 1729      port: 9091
+ 1730      protocol: TCP
+ 1731      appProtocol: http
+ 1732      targetPort: 9091
+ 1733    type: ClusterIP
+ 1734    selector:
+ 1735      app: www-9091
+ 1736  EOF
+ 1737  # 9092
+ 1738  kubectl -n java-tracing apply -f - <<EOF
+ 1739  apiVersion: v1
+ 1740  kind: Pod
+ 1741  metadata:
+ 1742    labels:
+ 1743      app: www-9092
+ 1744    name: www-9092
+ 1745  spec:
+ 1746    containers:
+ 1747    - env:
+ 1748      - name: SERVER_PORT
+ 1749        value: "9092"
+ 1750      image: localhost:5000/flomesh/java-tracing-client
+ 1751      name: www-9092
+ 1752    dnsPolicy: ClusterFirst
+ 1753    restartPolicy: Always
+ 1754  EOF
+ 1755  kubectl -n java-tracing apply -f - <<EOF
+ 1756  apiVersion: v1
+ 1757  kind: Service
+ 1758  metadata:
+ 1759    labels:
+ 1760      service: www-9092
+ 1761    name: www-9092
+ 1762  spec:
+ 1763    ipFamilies:
+ 1764    - IPv4
+ 1765    ports:
+ 1766    - name: web
+ 1767      port: 9092
+ 1768      protocol: TCP
+ 1769      appProtocol: http
+ 1770      targetPort: 9092
+ 1771    type: ClusterIP
+ 1772    selector:
+ 1773      app: www-9092
+ 1774  EOF
+ 1775  kp
+ 1776  ll
+ 1777  cd ..
+ 1778  cd deepak-server/
+ 1779  ll
+ 1780  cd target/
+ 1781  ll
+ 1782  cp ../../deepak-client/target/docker/ . -rf
+ 1783  ll
+ 1784  cp *.jar docker/ -f
+ 1785  cd docker/
+ 1786  ll
+ 1787  rm deepak-client-0.1.0.jar
+ 1788  ll
+ 1789  vi Dockerfile 
+ 1790  vi run.sh
+ 1791  ll
+ 1792  chmod 755 *.sh
+ 1793  ll
+ 1794  history
+ 1795  docker build --tag java-tracing-server . 
+ 1796  docker images
+ 1797  docker tag java-tracing-server localhost:5000/flomesh/java-tracing-server
+ 1798  docker push localhost:5000/flomesh/java-tracing-server
+ 1799  history
+ 1800  # 9090
+ 1801  kubectl -n java-tracing apply -f - <<EOF
+ 1802  apiVersion: v1
+ 1803  kind: Pod
+ 1804  metadata:
+ 1805    labels:
+ 1806      app: www-9090
+ 1807    name: www-9090
+ 1808  spec:
+ 1809    containers:
+ 1810    - env:
+ 1811      - name: SERVER_PORT
+ 1812        value: "9090"
+ 1813      image: localhost:5000/flomesh/java-tracing-client
+ 1814      name: www-9090
+ 1815    dnsPolicy: ClusterFirst
+ 1816    restartPolicy: Always
+ 1817  EOF
+ 1818  kubectl -n java-tracing apply -f - <<EOF
+ 1819  apiVersion: v1
+ 1820  kind: Service
+ 1821  metadata:
+ 1822    labels:
+ 1823      service: www-9090
+ 1824    name: www-9090
+ 1825  spec:
+ 1826    ipFamilies:
+ 1827    - IPv4
+ 1828    ports:
+ 1829    - name: web
+ 1830      port: 9090
+ 1831      protocol: TCP
+ 1832      appProtocol: http
+ 1833      targetPort: 9090
+ 1834    type: ClusterIP
+ 1835    selector:
+ 1836      app: www-9090
+ 1837  EOF
+ 1838  # 9091
+ 1839  kubectl -n java-tracing apply -f - <<EOF
+ 1840  apiVersion: v1
+ 1841  kind: Pod
+ 1842  metadata:
+ 1843    labels:
+ 1844      app: www-9091
+ 1845    name: www-9091
+ 1846  spec:
+ 1847    containers:
+ 1848    - env:
+ 1849      - name: SERVER_PORT
+ 1850        value: "9091"
+ 1851      image: localhost:5000/flomesh/java-tracing-client
+ 1852      name: www-9091
+ 1853    dnsPolicy: ClusterFirst
+ 1854    restartPolicy: Always
+ 1855  EOF
+ 1856  kubectl -n java-tracing apply -f - <<EOF
+ 1857  apiVersion: v1
+ 1858  kind: Service
+ 1859  metadata:
+ 1860    labels:
+ 1861      service: www-9091
+ 1862    name: www-9091
+ 1863  spec:
+ 1864    ipFamilies:
+ 1865    - IPv4
+ 1866    ports:
+ 1867    - name: web
+ 1868      port: 9091
+ 1869      protocol: TCP
+ 1870      appProtocol: http
+ 1871      targetPort: 9091
+ 1872    type: ClusterIP
+ 1873    selector:
+ 1874      app: www-9091
+ 1875  EOF
+ 1876  # 9092
+ 1877  kubectl -n java-tracing apply -f - <<EOF
+ 1878  apiVersion: v1
+ 1879  kind: Pod
+ 1880  metadata:
+ 1881    labels:
+ 1882      app: www-9092
+ 1883    name: www-9092
+ 1884  spec:
+ 1885    containers:
+ 1886    - env:
+ 1887      - name: SERVER_PORT
+ 1888        value: "9092"
+ 1889      image: localhost:5000/flomesh/java-tracing-client
+ 1890      name: www-9092
+ 1891    dnsPolicy: ClusterFirst
+ 1892    restartPolicy: Always
+ 1893  EOF
+ 1894  kubectl -n java-tracing apply -f - <<EOF
+ 1895  apiVersion: v1
+ 1896  kind: Service
+ 1897  metadata:
+ 1898    labels:
+ 1899      service: www-9092
+ 1900    name: www-9092
+ 1901  spec:
+ 1902    ipFamilies:
+ 1903    - IPv4
+ 1904    ports:
+ 1905    - name: web
+ 1906      port: 9092
+ 1907      protocol: TCP
+ 1908      appProtocol: http
+ 1909      targetPort: 9092
+ 1910    type: ClusterIP
+ 1911    selector:
+ 1912      app: www-9092
+ 1913  EOF
+ 1914  # 9093
+ 1915  kubectl -n java-tracing apply -f - <<EOF
+ 1916  apiVersion: v1
+ 1917  kind: Pod
+ 1918  metadata:
+ 1919    labels:
+ 1920      app: www-9093
+ 1921    name: www-9093
+ 1922  spec:
+ 1923    containers:
+ 1924    - env:
+ 1925      - name: SERVER_PORT
+ 1926        value: "9093"
+ 1927      image: localhost:5000/flomesh/java-tracing-server
+ 1928      name: www-9093
+ 1929    dnsPolicy: ClusterFirst
+ 1930    restartPolicy: Always
+ 1931  EOF
+ 1932  kubectl -n java-tracing apply -f - <<EOF
+ 1933  apiVersion: v1
+ 1934  kind: Service
+ 1935  metadata:
+ 1936    labels:
+ 1937      service: www-9093
+ 1938    name: www-9093
+ 1939  spec:
+ 1940    ipFamilies:
+ 1941    - IPv4
+ 1942    ports:
+ 1943    - name: web
+ 1944      port: 9093
+ 1945      protocol: TCP
+ 1946      appProtocol: http
+ 1947      targetPort: 9093
+ 1948    type: ClusterIP
+ 1949    selector:
+ 1950      app: www-9093
+ 1951  EOF
+ 1952  kp
+ 1953  ks
+ 1954  kp
+ 1955  kubectl apply -n java-tracing -f https://raw.githubusercontent.com/cybwan/osm-edge-start-demo/main/demo/plugin/curl.curl.yaml
+ 1956  kp
+ 1957  kdp
+ 1958  kep
+ 1959  kp
+ 1960  docker ps
+ 1961  docker stop www-9092
+ 1962  docker ps
+ 1963  telnet 0 9092
+ 1964  docker stop www-9092
+ 1965  kp
+ 1966  kubectl logs pod/www-9093 -n java-tracing
+ 1967  kubectl logs pod/www-9092 -n java-tracing
+ 1968  kubectl logs pod/www-9093 -n java-tracing
+ 1969  history | grep del
+ 1971  kubectl delete ns bookbuyer bookthief bookstore bookwarehouse
+ 1972  # namespace
+ 1973  kubectl create namespace java-tracing
+ 1974  osm namespace add java-tracing
+ 1975  # 9090
+ 1976  kubectl -n java-tracing apply -f - <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: www-9090
+  name: www-9090
+spec:
+  containers:
+  - env:
+    - name: SERVER_PORT
+      value: "9090"
+    image: localhost:5000/flomesh/java-tracing-client
+    imagePullPolicy: IfNotPresent
+    name: www-9090
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+EOF
+
+ 1977  kubectl -n java-tracing apply -f - <<EOF
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    service: www-9090
+  name: www-9090
+spec:
+  ipFamilies:
+  - IPv4
+  ports:
+  - name: web
+    port: 9090
+    protocol: TCP
+    appProtocol: http
+    targetPort: 9090
+  type: ClusterIP
+  selector:
+    app: www-9090
+EOF
+
+ 1978  # 9091
+ 1979  kubectl -n java-tracing apply -f - <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: www-9091
+  name: www-9091
+spec:
+  containers:
+  - env:
+    - name: SERVER_PORT
+      value: "9091"
+    image: localhost:5000/flomesh/java-tracing-client
+    imagePullPolicy: IfNotPresent
+    name: www-9091
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+EOF
+
+ 1980  kubectl -n java-tracing apply -f - <<EOF
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    service: www-9091
+  name: www-9091
+spec:
+  ipFamilies:
+  - IPv4
+  ports:
+  - name: web
+    port: 9091
+    protocol: TCP
+    appProtocol: http
+    targetPort: 9091
+  type: ClusterIP
+  selector:
+    app: www-9091
+EOF
+
+ 1981  # 9092
+ 1982  kubectl -n java-tracing apply -f - <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: www-9092
+  name: www-9092
+spec:
+  containers:
+  - env:
+    - name: SERVER_PORT
+      value: "9092"
+    image: localhost:5000/flomesh/java-tracing-client
+    imagePullPolicy: IfNotPresent
+    name: www-9092
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+EOF
+
+ 1983  kubectl -n java-tracing apply -f - <<EOF
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    service: www-9092
+  name: www-9092
+spec:
+  ipFamilies:
+  - IPv4
+  ports:
+  - name: web
+    port: 9092
+    protocol: TCP
+    appProtocol: http
+    targetPort: 9092
+  type: ClusterIP
+  selector:
+    app: www-9092
+EOF
+
+ 1984  # 9093
+ 1985  kubectl -n java-tracing apply -f - <<EOF
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: www-9093
+  name: www-9093
+spec:
+  containers:
+  - env:
+    - name: SERVER_PORT
+      value: "9093"
+    image: localhost:5000/flomesh/java-tracing-server
+    imagePullPolicy: IfNotPresent
+    name: www-9093
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+EOF
+
+ 1986  kubectl -n java-tracing apply -f - <<EOF
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    service: www-9093
+  name: www-9093
+spec:
+  ipFamilies:
+  - IPv4
+  ports:
+  - name: web
+    port: 9093
+    protocol: TCP
+    appProtocol: http
+    targetPort: 9093
+  type: ClusterIP
+  selector:
+    app: www-9093
+EOF
+
+ 1987  # curl
+ 1988  kubectl apply -n java-tracing -f https://raw.githubusercontent.com/cybwan/osm-edge-start-demo/main/demo/plugin/curl.curl.yaml
+ 1989  curl_client="$(kubectl get pod -n java-tracing -l app=curl -o jsonpath='{.items[0].metadata.name}')"
+ 1990  kubectl exec ${curl_client} -n java-tracing -c curl -- curl -ksi http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1991  kubectl apply -n java-tracing -f https://raw.githubusercontent.com/cybwan/osm-edge-start-demo/main/demo/plugin/curl.curl.yaml
+ 1992  kubectl exec ${curl_client} -n java-tracing -c curl -- curl -ksi http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1993  curl_client="$(kubectl get pod -n java-tracing -l app=curl -o jsonpath='{.items[0].metadata.name}')"
+ 1994  kubectl exec ${curl_client} -n java-tracing -c curl -- curl -ksi http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1995  history | grep del
+ 1996  kubectl delete ns bookbuyer bookthief bookstore bookwarehouse
+ 1997  kubectl exec ${curl_client} -n java-tracing -c curl -- curl -ksi http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 1998  curl_client="$(kubectl get pod -n java-tracing -l app=curl -o jsonpath='{.items[0].metadata.name}')"
+ 1999  kubectl exec ${curl_client} -n java-tracing -c curl -- curl -ksi http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 2000  kubectl exec ${curl_client} -n java-tracing -c curl -- curl -ksiv http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 2001  kp
+ 2002  ke www-9090-c5c58dd44-lnmfc -n java-tracing
+ 2003  ke www-9090-c5c58dd44-lnmfc -n java-tracing -c sidecar
+ 2004  curl_client="$(kubectl get pod -n java-tracing -l app=curl -o jsonpath='{.items[0].metadata.name}')"
+ 2005  kubectl exec ${curl_client} -n java-tracing -c curl -- curl -ksiv http://www-9090.java-tracing.svc.cluster.local:9090/fetchAndStore/9090
+ 2006  cd /var/root/cncf
+ 2007  ll
+ 2009  cd test
+ 2010  ll
+ 2011  cd ..
+ 2012  ll
+ 2013  cd test
+ 2014  ll
+ 2015  cd ..
+ 2016  ll
+ 2017  cd ..
+ 2018  ll
+ 2019  cd test
+ 2020  ll
+ 2021  tar zcvf deepakLab.tar.z deepakLab
+ 2022  ll
+ 2023  cd deepakLab/
+ 2024  ll
+ 2025  cd deepak-projects/
+ 2026  ll
+ 2027  cd deepak-client/
+ 2028  ll
+ 2029  ll ..
+ 2030  ll ../..
+ 2031  ll ../../..
+ 2032  ll
+ 2033  vi pom.xml 
+ 2034  ll
+ 2035  history | grep mvn
+ 2036  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2037  ll
+ 2038  cd target/
+ 2039  ll
+ 2040  ll -lh
+ 2041  cd ..
+ 2042  ll
+ 2043  tree
+ 2044  ll
+ 2045  cd ..
+ 2046  ll
+ 2047  cd ..
+ 2048  ll
+ 2049  find . -name "Dockerfile"
+ 2050  find /var/root/cncf/ -name "Dockerfile"
+ 2051  find /var/root/cncf/ -name "Dockerfile" | grep deep
+ 2052  ll
+ 2053  cd deepak-projects/
+ 2054  ll
+ 2055  cd deepak-client/
+ 2056  ll
+ 2057  cd target/
+ 2058  ll
+ 2059  mkdir 1
+ 2060  cd 1
+ 2061  cp ../*.jar .
+ 2062  ll
+ 2063  jar xvf deepak-client-0.1.0.jar 
+ 2064  ll
+ 2065  cd META-INF
+ 2066  ll
+ 2067  cd maven/
+ 2068  ll
+ 2069  cd ..
+ 2070  tree
+ 2071  tree | grep -i zip
+ 2072  cd ..
+ 2073  ll
+ 2074  cd target/
+ 2075  ll
+ 2076  java -jar deepak-client-0.1.0.jar 
+ 2077  ll
+ 2078  rm  1 -rf
+ 2079  ll
+ 2080  cp ../../deepak-server/target/docker/ . -rf
+ 2081  ll
+ 2082  cd docker/
+ 2083  ll
+ 2084  cat run.sh 
+ 2085  cd ..
+ 2086  ll
+ 2087  java -jar deepak-client-0.1.0.jar --server.port=9090
+ 2088  ll
+ 2089  rm *.jar
+ 2090  ll
+ 2091  cd ..
+ 2092  ll
+ 2093  vi pom.xml 
+ 2094  history
+ 2095  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2096  vi pom.xml 
+ 2097  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2098  cd target/
+ 2099  ll
+ 2100  history
+ 2101  java -jar deepak-client-0.1.0.jar --server.port=9090
+ 2102  cd ..
+ 2103  vi pom.xml 
+ 2104  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2105  ll
+ 2106  ll target/
+ 2107  java -jar deepak-client-0.1.0.jar --server.port=9090
+ 2108  java -jar target/deepak-client-0.1.0.jar --server.port=9090
+ 2109  vi pom.xml 
+ 2110  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2111  java -jar target/deepak-client-0.1.0.jar --server.port=9090
+ 2112  ll
+ 2113  vi pom.xml 
+ 2114  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2115  java -jar target/deepak-client-0.1.0.jar --server.port=9090
+ 2116  ll
+ 2117  vi pom.xml 
+ 2118  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2119  java -jar target/deepak-client-0.1.0.jar --server.port=9090
+ 2120  vi pom.xml 
+ 2121  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2122  vi /var/root/cncf/test/deepakLab/deepak-projects/deepak-client/src/main/java/client/controller/ErrorController.java
+ 2123  vi /var/root/cncf/test/deepakLab/deepak-projects/deepak-client/src/main/java/client/service/AddressServiceImpl.java
+ 2124  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2125  vi /var/root/cncf/test/deepakLab/deepak-projects/deepak-client/src/main/java/client/controller/ErrorController.java
+ 2126  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2127  vi /var/root/cncf/test/deepakLab/deepak-projects/deepak-client/src/main/java/client/controller/ErrorController.java
+ 2128  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2129  vi /var/root/cncf/test/deepakLab/deepak-projects/deepak-client/src/main/java/client/controller/ErrorController.java
+ 2130  vi pom.xml 
+ 2131  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2132  vi pom.xml 
+ 2133  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2134  java -jar target/deepak-client-0.1.0.jar --server.port=9090
+ 2135  java -jar target/deepak-client-0.1.0.jar --server.port=9092
+ 2136  ll
+ 2137  git status
+ 2138  git diff
+ 2139  ll
+ 2140  vi pom.xml 
+ 2141  git diff
+ 2142  ll
+ 2143  ls target/
+ 2144  ll
+ 2145  mv target/ /tmp/
+ 2146  ll
+ 2147  du -sh
+ 2148  history
+ 2149  git diff
+ 2150  history
+ 2151  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2152  ll
+ 2153  ll target/
+ 2154  ll
+ 2155  du -sh
+ 2156  ll
+ 2157  cd target/
+ 2158  ll
+ 2159  cd ..
+ 2160  ll
+ 2161  cp ../deepak-server/target/docker/ . -rf
+ 2162  ll
+ 2163  cd docker/
+ 2164  ll
+ 2165  rm *.jar
+ 2166  cp ../target/*.jar
+ 2167  cp ../target/*.jar .
+ 2168  ll
+ 2169  vi run.sh 
+ 2170  ll
+ 2171  cat run.sh
+ 2172  ll
+ 2173  vi Dockerfile 
+ 2174  ll
+ 2175  history | grep docker
+ 2176  docker build --tag java-tracing-client .
+ 2177  ll
+ 2178  cd ..
+ 2179  ll
+ 2180  cd deepak-projects/
+ 2181  ll
+ 2182  cd deepak-server/
+ 2183  ll
+ 2184  vi ../deepak-client/pom.xml 
+ 2185  vi pom.xml 
+ 2186  ll
+ 2187  rm target/ -rf
+ 2188  ll
+ 2189  history
+ 2190  mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+ 2191  ll
+ 2192  cp ../deepak-client/docker/ . -rf
+ 2193  cd docker/
+ 2194  ll
+ 2195  rm *.jar
+ 2196  cp ../*.jar .
+ 2197  cp ../target/*.jar .
+ 2198  ll
+ 2199  vi run.sh 
+ 2200  ll
+ 2201  docker build --tag java-tracing-server .
+ 2202  cd ..
+ 2203  ll
+ 2204  cd ..
+ 2205  ll
+ 2206  cd deepak-projects/
+ 2207  ll
+ 2208  history | grep docker
+ 2209  history
+ 2210  history > cmd.history
